@@ -1,0 +1,16 @@
+_package: Customer.entities.Product
+_type: DisplayCard
+_name: ProductDisplayCard
+entity: Customer.entities.Product.Product
+default: true
+primaryTextExpression: ProductID
+primaryImageValueInterpreter: LITERAL
+avatarImageSourceType: URL
+primaryImageAlign: MIDDLE_CENTER
+primaryImageMode: FIT
+primaryImageFallbackValueInterpreter: LITERAL
+primaryImageFallbackSourceType: URL
+avatarImageValueInterpreter: LITERAL
+primaryImageSourceType: URL
+avatarImageAlign: MIDDLE_CENTER
+avatarImageMode: FIT

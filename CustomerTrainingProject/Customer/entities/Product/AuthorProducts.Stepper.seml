@@ -1,0 +1,56 @@
+_package: Customer.entities.Product
+_type: Stepper
+_name: AuthorProducts
+entity: Customer.entities.Product.Product
+label: Products
+steps:
+  - _type: CollectionStep
+    _name: Products
+    label: Products
+    canFinishSubLevel: true
+    enabledOnParentCreate: true
+    enabledOnParentEdit: true
+    formFieldsMode: AUTO
+    linear: false
+    childDeleteType: HARD_DELETE
+    collectionView: Customer.entities.Product.ProductCollectionView
+    defaultDisplayType: TABLE
+    customSortEnabled: false
+    userDefinedSortEnabled: true
+    displayGridAllowed: false
+    displayListAllowed: true
+    displayTableAllowed: true
+    useCustomCollectionLabel: false
+    childImportModeOnParentEdit: CREATE_AND_UPDATE
+    createChildUsingManyToManyPicker: false
+    enableChildCopyOnParentCreate: true
+    enableChildCopyOnParentEdit: true
+    enableChildCreationOnParentCreate: true
+    enableChildCreationOnParentEdit: true
+    enableChildDeleteOnParentEdit: true
+    enableChildEditOnParentCreate: true
+    enableChildEditOnParentEdit: true
+    enableChildExport: false
+    enableChildImportOnParentCreate: true
+    enableChildImportOnParentEdit: false
+    enableChildRemoveOnParentCreate: true
+    enableChildRemoveOnParentEdit: true
+    manyToManyCustomSortEnabled: false
+    manyToManyDefaultDisplayType: GRID
+    manyToManyDisplayGridAllowed: true
+    manyToManyDisplayListAllowed: true
+    manyToManyDisplayTableAllowed: true
+    manyToManyUserDefinedSortEnabled: true
+    skipToChildCreationOnParentCreate: false
+    skipToChildEditingOnParentEdit: false
+  - _type: FormStep
+    _name: Product
+    label: Product
+    canFinishSubLevel: true
+    enabledOnParentCreate: true
+    enabledOnParentEdit: true
+    formFieldsMode: AUTO
+    enableMasterValuePicking: false
+    formTab: Customer.entities.Product.ProductForm.Product
+    parentCollectionStep: Customer.entities.Product.AuthorProducts.Products
+rootCollectionStep: Customer.entities.Product.AuthorProducts.Products

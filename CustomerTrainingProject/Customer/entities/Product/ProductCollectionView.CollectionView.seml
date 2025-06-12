@@ -1,0 +1,40 @@
+_package: Customer.entities.Product
+_type: CollectionView
+_name: ProductCollectionView
+entity: Customer.entities.Product.Product
+default: true
+displayCard: Customer.entities.Product.ProductDisplayCard
+gridAllowed: false
+gridColumns: 4
+gridTextPosition: BOTTOM
+gridTileHeight: 1:1
+gridTileLines: 1
+listAllowed: true
+listItemLines: 1
+listShowDisplayCardAvatar: false
+listShowDivider: true
+tableAllowed: true
+tableDisplayCardColumnLabel: Product
+tableRowLines: 1
+tableShowDisplayCard: true
+tableColumns:
+  - _type: TableColumn
+    _name: ProductID
+    value: ProductID
+    useCustomLabel: false
+    visibleByDefault: true
+    columnAlign: LEFT
+    posInParent: 0
+    documentationInterpreter: LITERAL
+    componentName: semIdField
+    dataType: STRING
+  - _type: TableColumn
+    _name: ProductName
+    value: ProductName
+    useCustomLabel: false
+    visibleByDefault: true
+    columnAlign: LEFT
+    posInParent: 1
+    documentationInterpreter: LITERAL
+    componentName: semTextField
+    dataType: STRING
