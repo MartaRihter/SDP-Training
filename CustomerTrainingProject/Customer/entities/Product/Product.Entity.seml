@@ -1,0 +1,40 @@
+_package: Customer.entities.Product
+_type: Entity
+_name: Product
+label: Product
+pluralLabel: Product
+entityType: BASIC
+physicalTableName: PRODUCT
+iconUrl: images://mdi/book.svg
+description: ""
+documentation: ""
+historizeGolden: false
+historizeMaster: false
+enableDelete: true
+
+attributes:
+  - _type: EntityAttribute
+    _name: ProductID
+    label: Product ID
+    physicalName: PRODUCT_ID
+    dataType: String
+    length: 128
+    mandatory: true
+    mandatoryValidationScope: NONE
+    searchable: true
+  - _type: EntityAttribute
+    _name: ProductName
+    label: Product Name
+    physicalName: PRODUCT_NAME
+    dataType: String
+    length: 256
+    mandatory: true
+    mandatoryValidationScope: NONE
+    searchable: true
+
+
+primaryKey: Customer.entities.Product.Product.ProductID
+sourceIdGeneration:
+  mode: MANUAL
+  startWith: 1
+

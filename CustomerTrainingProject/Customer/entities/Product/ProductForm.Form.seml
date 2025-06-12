@@ -1,0 +1,32 @@
+_package: Customer.entities.Product
+_type: Form
+_name: ProductForm
+entity: Customer.entities.Product.Product
+default: true
+formTabs:
+  - _type: FormTab
+    _name: Product
+    label: Product
+    documentationInterpreter: LITERAL
+    visibleValue: "1"
+    visibleValueInterpreter: LITERAL
+    displayFormTabAs: LABEL
+    content:
+      - _type: FormField
+        _name: ProductID
+        value: ProductID
+        useCustomLabel: false
+        documentationInterpreter: LITERAL
+        visibleValue: "1"
+        visibleValueInterpreter: LITERAL
+        componentName: semIdField
+        dataType: STRING
+      - _type: FormField
+        _name: ProductName
+        value: ProductName
+        useCustomLabel: false
+        documentationInterpreter: LITERAL
+        visibleValue: "1"
+        visibleValueInterpreter: LITERAL
+        componentName: semTextField
+        dataType: STRING
